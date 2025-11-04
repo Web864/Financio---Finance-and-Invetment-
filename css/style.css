@@ -1,0 +1,26 @@
+--- Global overflow fix --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make sure images never exceed screen width */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* For extra safety */
+.container, .container-fluid, .row {
+  overflow-x: hidden;
+}
+
+/* 
